@@ -26,8 +26,9 @@ export default (app) => {
     app.on(
         [
             "pull_request.opened",
+            "pull_request.edited",
+            "pull_request.reopened",
             "pull_request.synchronize",
-            "pull_request.edited", // edited action should be removed, it is only for test purposes
         ],
         async (context) => {
             // Process PR and check for code smells
