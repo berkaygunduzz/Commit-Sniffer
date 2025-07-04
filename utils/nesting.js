@@ -1,5 +1,3 @@
-import { getResponse } from "./gemini_api.js";
-
 export async function checkUnnecessaryNesting(fileContent, filePath) {
     // Prepare the prompt for the LLM
     const prompt1 = 
