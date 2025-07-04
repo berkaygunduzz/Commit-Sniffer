@@ -1,4 +1,4 @@
-import { multiPromptChat, sanitizeJSONResult } from "./gemini_api.js";
+import { multiPromptChat } from "./gemini_api.js";
 
 function extractComments(fileContent) {
     const commentRegex = /\/\*[\s\S]*?\*\/|\/\/.*/g;
